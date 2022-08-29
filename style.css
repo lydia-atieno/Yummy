@@ -61,17 +61,19 @@ html{
     z-index: -1;
 }
 #title h1{
-    color: aqua;
+    color: rgb(251, 150, 251);
     font-size: 2.3rem;
+    background-color: ;
+    border-radius: 10%;
 
 }
 #title button{
-    font-size: 1rem;
+   font-size: 1rem;
     cursor: grab;
     margin-top: 16px;
     scroll-behavior: calc();
-    background-color: darkcyan;
-    border-color: darkcyan;
+    background-color: rgb(112, 0, 112);
+    border-color: purple;
     color: white;
     font-weight: 500;
     animation: wiggle 2s linear infinite;
