@@ -249,7 +249,7 @@ html::after{
     height: 65vh;
 }
 #price .price-items{
-     max-width: 280px;
+     max-width: 230px;
     margin-left: 60px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -261,7 +261,7 @@ html::after{
     color: antiquewhite;
     background-color: black;
     color: white;
-    margin-left: 56px;
+    margin-left: 30px;
 }
 /*end price section*/
 
