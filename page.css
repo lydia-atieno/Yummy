@@ -61,6 +61,7 @@ html::after{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 20px;
     
 }
 #about .about-itemz{
@@ -250,7 +251,7 @@ html::after{
 }
 #price .price-items{
      max-width: 230px;
-    margin-left: 60px;
+    margin-left: 0px;
     font-size: 0.9rem;
     font-weight: 500;
     color: white;
@@ -261,7 +262,7 @@ html::after{
     color: antiquewhite;
     background-color: black;
     color: white;
-    margin-left: 30px;
+    margin-left: 0px;
 }
 /*end price section*/
 
@@ -358,7 +359,7 @@ html::after{
     background-color: rgb(60, 2, 60);
     min-height: 26vh;
     width: 73%;
-    margin-left: 47px;
+    margin-left: 30px;
     margin-top: px;
     padding-left: px;
     border-radius: 10%;
@@ -376,7 +377,7 @@ html::after{
     font-size: 0.8rem;
 }
 #footer h3 span{
-    color: darkcyan;
+    color: plum;
 }
 #footer h4{
     /*color: rgb(239, 241, 247);*/
