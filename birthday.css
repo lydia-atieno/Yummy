@@ -6,7 +6,7 @@
 }
 html{
     /*background-color: rgb(2, 233, 233);*/
-    background-image: url(file:///C:/Users/user/Desktop/Yummy/Cakes/X.jpg);
+    background-image: url(https://github.com/lydia-atieno/Yummy/blob/master/Cakes/X.jpg?raw=true);
     opacity: .8;
     display: flex;
     position: relative;
