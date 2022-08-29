@@ -8,10 +8,22 @@
 }
 
 html{
-    background-color: #239b8f;
+    background-image: url(file:///C:/Users/user/Desktop/Yummy/Cakes/X.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    opacity: .9;
+    z-index: 1;
+    /*background-color: rgb(18, 139, 139);*/
+    /*background-color: #9d4541;*/
+    /*background-color: #1e8183;*/
+    /*background-color: #400F19;*/
+    /*background-color: #173C4C;*/
+    
+    /*background-color: #239b8f;*/
     /*background-color: #850E35;*/
-    /*background-color: rgb(6, 171, 174);*/
-    /*background-color: darkturquoise;*/
+    /*background-color: #D90368;*/
+    /*background-color: #b4646a;*/
     /*background-color: rgb(40, 187, 200);*/
     /*background-color: #29c6cd;*/
     /*background-color: #055049;*/
@@ -20,8 +32,19 @@ html{
     /*background-color: #9C0F48;*/
     font-family: 'Josefin Sans', sans-serif;
     /*font-family: 'Padauk', sans-serif;*/
-    display: block;
+    display: flex;
     animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175,1) 0.5s;
+}
+html::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: ;
+    opacity: .8;
+    z-index: -1;
 }
 @keyframes reveal{
     0%{
@@ -44,18 +67,39 @@ html{
     margin-left: 30px;
    
 }
+#about .about-itemz::after{
+    z-index: 1;
+}
 
 #about h1{
     font-size: 1.6rem;
     margin-top: 30px;
-    background-color: rgb(56, 205, 205);
+    /*background-color: rgb(56, 205, 205);*/
+    background-color: ;
     border-radius: 10%;
+    background-color: rgb(108, 3, 108);
+    color: white;
+    font-weight: 500;
 }
 #about p{
     max-width: 280px;
     font-size: 0.9rem;
     text-align: justify;
-    
+    color: white;
+    font-weight: 500;
+    background-color: black;
+}
+#about::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: ;
+    width: ;
+    background-color: ;
+    opacity: .3;
+    z-index: -1;
+    background-size: cover;
 }
 /*End about section*/
 
@@ -91,11 +135,13 @@ html{
     height: 20vh;
 }
 #order h1{
-    font-size: 1.6rem;
+     font-size: 1.6rem;
     margin-top: 80px;
-    background-color: rgb(56, 205, 205);
+    background-color: rgb(108, 3, 108);
     border-radius: 10%;
     margin-bottom: 10px;
+    color: white;
+    font-weight: 500;
 }
 #order .order-items{
     display: flex;
@@ -104,12 +150,13 @@ html{
     justify-content: center;
 }
 #order .order-item button{
-    background-color: rgb(4, 233, 233);
+     background-color: plum;
     margin-top: 55px;
     margin-right: 30px;
     border-radius: 40%;
     border: double;
     padding: 5px;
+    color: black;
 }
 #order .order-item{
     display: flex;
@@ -118,17 +165,32 @@ html{
 #order .order-item .img2{
     margin-right: 18px;
 }
+#order .order-item .img2::after{
+    z-index: 1;
+}
 #order .order-item .img3{
     margin-left: 10px;
+}
+#order .order-item .img3::after{
+    z-index: 1;
 }
 #order .order-item .img4{
     margin-left: 18px;
 }
+#order .order-item .img4::after{
+    z-index: 1;
+}
 #order .order-item .img5{
     margin-left: 28px;
 }
+#order .order-item .img5::after{
+    z-index: 1;
+}
 #order .order-item .img6{
     margin-left: 60px;
+}
+#order .order-item .img6::after{
+    z-index: 1;
 }
 /*End order section*/
 
@@ -177,20 +239,29 @@ html{
 }
 #price h1{
     font-size: 1.7rem;
-    background-color: rgb(56, 205, 205);
+    background-color: rgb(108, 3, 108);
     border-radius: 10%;
     margin-bottom: 18px;
+    color: white;
+    font-weight: 500;
 }
 #price .price{
     height: 65vh;
 }
 #price .price-items{
-    max-width: 280px;
+     max-width: 280px;
     margin-left: 60px;
     font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    background-color: black;
 }
 #price p{
     font-size: 0.9rem;
+    color: antiquewhite;
+    background-color: black;
+    color: white;
+    margin-left: 56px;
 }
 /*end price section*/
 
@@ -243,18 +314,27 @@ html{
     justify-content: center;
 }
 #finish h1{
-    background-color: rgb(4, 233, 233);
+   background-color: white;
     font-size: 1rem;
     margin-top: 30px;
     border-radius: 20%;
     text-align: justify;
+    color: rgb(108, 3, 108);
 }
 #finish h2{
-    margin-left: px;
+    background-color: rgb(108, 3, 108);
+    color: antiquewhite;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
     
 }
 #finish p{
-    font-size: 0.9rem;
+     font-size: 0.9rem;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    margin-top: 18px;
 }
 /*end finish section*/
 
@@ -275,10 +355,10 @@ html{
 #footer .footer{
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(60, 2, 60);
     min-height: 26vh;
     width: 73%;
-    margin-left: 54px;
+    margin-left: 47px;
     margin-top: px;
     padding-left: px;
     border-radius: 10%;
@@ -288,7 +368,7 @@ html{
 }
 #footer h3{
     /*color: rgb(239, 241, 247);*/
-    color: aqua;
+    color: white;
     font-weight: 500;
     letter-spacing: rem;
     margin-bottom: 1px;
@@ -302,13 +382,13 @@ html{
     /*color: rgb(239, 241, 247);*/
     font-weight: 500;
     font-size: 0.7rem;
-    color: aqua;
+    color: white;
 }
 #footer p{
     /*color: rgb(239, 241, 247);*/
     font-weight: 500;
     font-size: 0.7rem;
-    color: aqua;
+    color: white;
     margin-top: 1px;
 }
 #footer .social-icon{
