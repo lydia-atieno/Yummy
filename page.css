@@ -1,0 +1,321 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgb(6, 171, 174);
+    /*background-color: darkturquoise;*/
+    /*background-color: rgb(40, 187, 200);*/
+    /*background-color: #29c6cd;*/
+    /*background-color: #055049;*/
+    /*background-color: #096386;*/
+    /*background-color: #de6b35;*/
+    /*background-color: #9C0F48;*/
+    font-family: 'Josefin Sans', sans-serif;
+    /*font-family: 'Padauk', sans-serif;*/
+    display: block;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175,1) 0.5s;
+}
+@keyframes reveal{
+    0%{
+        transform: translate(0,100%);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+/*about section*/
+#about .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#about .about-itemz{
+    margin-left: 30px;
+   
+}
+
+#about h1{
+    font-size: 1.6rem;
+    margin-top: 30px;
+    background-color: rgb(56, 205, 205);
+    border-radius: 10%;
+}
+#about p{
+    max-width: 280px;
+    font-size: 0.9rem;
+    text-align: justify;
+    
+}
+/*End about section*/
+
+/*Desktop view*/
+@media only screen and (min-width: 1200px){
+    #about .about-items{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 370px;
+    }
+    #about .about-item{
+        margin-right: 10px;
+        
+    }
+    #about p{
+        font-size: large;
+        max-width: 400px;
+    }
+    #about img{
+        width: 50%;
+        height: 80%;
+    }
+}
+/*End desktop view*/
+
+/*Order section*/
+#order .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#order .order{
+    height: 20vh;
+}
+#order h1{
+    font-size: 1.6rem;
+    margin-top: 80px;
+    background-color: rgb(56, 205, 205);
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+#order .order-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#order .order-item button{
+    background-color: rgb(4, 233, 233);
+    margin-top: 55px;
+    margin-right: 30px;
+    border-radius: 40%;
+    border: double;
+    padding: 5px;
+}
+#order .order-item{
+    display: flex;
+    margin-top: ;
+}
+#order .order-item .img2{
+    margin-right: 18px;
+}
+#order .order-item .img3{
+    margin-left: 10px;
+}
+#order .order-item .img4{
+    margin-left: 18px;
+}
+#order .order-item .img5{
+    margin-left: 28px;
+}
+#order .order-item .img6{
+    margin-left: 60px;
+}
+/*End order section*/
+
+/*Desktop view*/
+@media only screen and (min-width: 1200px){
+    #order .order-items{
+        display: flex;
+        flex-direction: row;
+        max-width: px;
+        margin-left: px;
+    }
+    #order .order-item button{
+        margin-left: 40px;
+        margin-top: 14px;
+
+    }
+    #order .order-item{
+        display: flex;
+        flex-direction: column;
+    }
+    #order .order-item .img3{
+        margin-left: 0px;
+        padding-right: px;
+    }
+    #order .order-item .img4{
+        margin-left: 1px;
+        padding-right: px;
+    }
+    #order .order-item .img5{
+        margin-left: 1px;
+        padding-right: px;
+    }
+    #order .order-item .img6{
+        margin-left: 10px;
+        padding-right: px;
+    }
+
+}
+
+/*price section*/
+#price .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#price h1{
+    font-size: 1.7rem;
+    background-color: rgb(56, 205, 205);
+    border-radius: 10%;
+    margin-bottom: 18px;
+}
+#price .price{
+    height: 65vh;
+}
+#price .price-items{
+    max-width: 280px;
+    margin-left: 60px;
+    font-size: 0.9rem;
+}
+#price p{
+    font-size: 0.9rem;
+}
+/*end price section*/
+
+@media only screen and (min-width: 1200px){
+    #price h1{
+        font-size: 2.3rem;
+        margin-top: 20px;
+    }
+    #price .price-items{
+        display: flex;
+        max-width: none;
+    }
+    #price .price-item{
+        margin-right: 12px;
+    }
+}
+
+/*footer section*/
+/*#footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer .footer{
+    border-radius: 50%;
+    width: px;
+    border-left: 50px;
+    border-width: 20px;
+    
+    border: black;
+    background-color: darkturquoise;
+}
+#footer h2{
+    font-size: 1.2rem;
+}*/
+/*Desktop view*/
+/*@media only screen and (min-width: 1200px){
+    #footer .footer-items{
+        display: flex;
+    }
+}*/
+/*end footer section*/
+
+/*finish section*/
+#finish .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#finish h1{
+    background-color: rgb(4, 233, 233);
+    font-size: 1rem;
+    margin-top: 30px;
+    border-radius: 20%;
+    text-align: justify;
+}
+#finish h2{
+    margin-left: px;
+    
+}
+#finish p{
+    font-size: 0.9rem;
+}
+/*end finish section*/
+
+/*footer section*/
+#footer .container{
+    display: flex;
+    flex-direction: ;
+    align-items: center;
+    justify-content: center;
+    width: 105%;
+    left: px;
+    top: px;
+    min-height: 100vh;
+}
+#footer{
+    margin: 30px;
+}
+#footer .footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 26vh;
+    width: 73%;
+    margin-left: 58px;
+    margin-top: px;
+    padding-left: px;
+    border-radius: 10%;
+    border-style: double;
+    border-color: aliceblue;
+    
+}
+#footer h3{
+    /*color: rgb(239, 241, 247);*/
+    color: aqua;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 1px;
+    margin-top: 0px;
+    font-size: 0.8rem;
+}
+#footer h3 span{
+    color: darkcyan;
+}
+#footer h4{
+    /*color: rgb(239, 241, 247);*/
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: aqua;
+}
+#footer p{
+    /*color: rgb(239, 241, 247);*/
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: aqua;
+    margin-top: 1px;
+}
+#footer .social-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+    margin-top: 1px
+}
+#footer .social-item{
+    margin-left: 8px;
+}
+/*end footer section*/

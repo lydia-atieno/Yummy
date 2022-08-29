@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Dancing Script', cursive;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*header section*/
+#header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    /*background-color: var(--dark-light);*/
+}
+#header .header{
+    height: 10vh;
+    margin-right:px;
+    
+}
+#header .logo{
+    margin-right: 340px;
+    margin-top: 16px;
+}
+/*end header section*/
+
+
+/*title section*/
+#title{
+    background-image: url(file:///C:/Users/user/Desktop/Yummy/Cakes/Pic3.jpg);
+    opacity: 0.7;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    
+}
+#title::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+#title h1{
+    color: aqua;
+    font-size: 2.3rem;
+
+}
+#title button{
+    font-size: 1rem;
+    cursor: grab;
+    margin-top: 16px;
+    scroll-behavior: calc();
+    background-color: darkcyan;
+    border-color: darkcyan;
+    color: white;
+    font-weight: 500;
+    animation: wiggle 2s linear infinite;
+}
+/*keyframes*/
+@keyframes wiggle {
+    0%, 7%{
+        transform: rotateZ(0);
+    }
+    15%{
+        transform: rotateZ(-15deg);
+    }
+    20%{
+        transform: rotateZ(10deg);
+    }
+    25%{
+        transform: rotateZ(-10deg);
+    }
+    30%{
+        transform: rotateZ(6deg);
+    }
+    35%{
+        transform: rotateZ(-4deg);
+    }
+    40%, 100%{
+        transform: rotateZ(0);
+    }
+}
+/*End title section*/
+
+/*about section*/
+#about{
+    background-color: ;
+}
+#about .about h1{
+    font-size: 2rem;
+}
+/*End about section*/
