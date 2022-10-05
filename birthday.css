@@ -50,6 +50,16 @@ html::after{
     color: antiquewhite;
     font-weight: 500;
 }
+
+#birthday .birthday-item .imgb{
+    position: relative;
+    z-index: -1;
+}
+#birthday .birthday-item .imgb::after{
+    
+    z-index: 1;
+}
+
 /*Desktop view*/
 @media only screen and (min-width: 1200px){
     #birthday .birthday-items{
