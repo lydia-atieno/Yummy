@@ -50,3 +50,10 @@ html::after{
     display: flex;
     
 }
+#kids .kids-item img::after{
+    z-index: 1;
+}
+#kids .kids-item{
+    display: flex;
+    
+}
