@@ -42,6 +42,9 @@ html::after{
 #sprinkles .sprinkles-item{
     display: flex;
 }
+#sprinkles .sprinkles-item img{
+    z-index: 1;
+}
 #sprinkles h1{
     margin-top: 30px;
     text-decoration: underline;
